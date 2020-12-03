@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+html
+{
+    font-family : 'Marck Script', cursive;
+    font-size: 36;
+}
+body
+{
+    background-color: #E5E5E5;
+}
+h1
+{
+    color: #C0C0C0;
+    display:block;
+    text-align: center;
+}
+.top-menu 
+{
+  background: #E3F2FD;
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 3px;
+  height: 60px;
+}
+.menu-main li  { display: inline-block; }
+.menu-main 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*текст*/
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    left: 210px;
+    top: 20px;
+    padding-left: 20px;
+    
+    font-family : 'Marck Script', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    transition:.5s linear;
+}  
+  
+.search
+{
+    float: right;
+      position: relative;
+      top:-53px;
+      padding: 5px;
+}
+.search input
+{
+    font-family : 'Marck Script', cursive;
+      background: white;
+      border: 1px solid #333333;
+      box-sizing: border-box;
+      border-radius: 4px;
+      color: #C0C0C0
+}
+.search button
+{
+    font-family : 'Marck Script', cursive;
+    background: #FFFFFF;
+      border: 1px solid #0275D8;
+      box-sizing: border-box;
+      border-radius: 4px;
+      color: #0275D8;
+}
+
+.Block 
+{
+
+    text-align: center;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    width: 492px;
+    /*height: 138px;*/
+    height: auto;
+    margin-left: 45%;
+    font-family : 'Marck Script', cursive;
+    font-size: 20px;
+    color: black;
+    top: 175px;
+    margin-block-end: 25px;
+}
+.Block input
+{
+    width: 90%;/*350px;*/
+    height: 30px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    align-items: center;
+}
+.BlockDis 
+{
+    font-family : 'Marck Script', cursive;
+    font-size: 20px;
+    
+    text-align: center;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    width: 872px;
+    /*height: 299px;*/
+    height: auto;
+    margin-left: 45%;
+    color: black;
+    margin-top: 55px;
+}
+.BlockDis textarea
+{
+    font-size: 12px;
+    width: 803px;
+    height: 240px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+.Title
+{
+    color: black;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.left-pic
+{
+    display:block;
+    margin-left: 50px;
+    border: 1px solid black;
+}
+.Save
+{
+    font-family : 'Marck Script', cursive;
+    width: 196px;
+    height: 40px;
+    margin-left: 668px;
+    margin-top: 50px;
+    background: #0275D8;
+    color: white;
+}
