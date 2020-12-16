@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="https://shetininaliza.github.io/DirectoryOfWeapons/Image/Plugin Icon - 1.png">
+    <link rel="icon" type="image/png" href="/Image/Plugin Icon - 1.png">
     <title>Оружие времен и народов.</title>
-    <link rel="stylesheet" type="text/css" href="https://shetininaliza.github.io/DirectoryOfWeapons/UpdateData/updateDataStyle.css">
+    <link rel="stylesheet" type="text/css" href="/UpdateData/updateDataStyle.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <meta charset="utf-8"/>
 </head>
 <body>
         <nav class="top-menu">
                 <ul class="menu-main">
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/index.html">Оружие народов и времен</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Era/tableEra.html">Список эпох</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Category/tableCategory.html">Список категорий</a></li>
+                  <li><a href="/index.html">Оружие народов и времен</a></li>
+                  <li><a href="/Table/Era/tableEra.html">Список эпох</a></li>
+                  <li><a href="/Table/Category/tableCategory.html">Список категорий</a></li>
                 </ul>
         </nav>
-            <form class= "search" action="" method="get">
+            <form class="search" id="search">
                 <input name="s" placeholder="Искать..." type="search">
                 <button type="submit">Поиск</button>
             </form>
             <h1 align="center">Редактировать</h1>
 
-        <nav>
-                <img align="left" class="left-pic" src="https://shetininaliza.github.io/DirectoryOfWeapons/Image/cop1.png">
+            <form id="edit">
+                <input type="hidden" name="real_name" value="Копье"></input>
+              <nav>
+                <img align="left" class="left-pic" src="/Image/cop1.png">
             <nav  align="center" class="Block">
                 <b><p class="Title">Название</p><b>
-                    <input value="Копье"></input>
+                    <input name="name" value="Копье"></input>
             </nav>
             <nav  align="center" class="Block">
                 <b><p class="Title">Страна:</p></b>
-                    <input value="Повсеместно"></input>
+                    <input name="country" value="Повсеместно"></input>
             </nav>
         </nav>
         <nav  align="center" class="BlockDis">
             <b><p class="Title">Описание:</p></b>
-            <textarea>Копьё— метательное, колющее или колюще-рубящее древковое холодное оружие.
+            <textarea name="desc">Копьё— метательное, колющее или колюще-рубящее древковое холодное оружие.
                 Копья бывают двух видов: метательные и для ближнего боя. Обычное копьё состоит из деревянного древка и металлического наконечника, 
                 форма которого может быть самой разнообразной. 
                 Прототип копья недавно был обнаружен при наблюдении за современными обезьянами. Самки шимпанзе в некоторых стаях при охоте на мелких 
@@ -52,5 +56,7 @@
             </textarea>
             </nav>
          <button class="Save" type="submit">Сохранить</button>
+        </form>
+        <script type="text/javascript" src="/site.js"></script>
 </body>
 </html>

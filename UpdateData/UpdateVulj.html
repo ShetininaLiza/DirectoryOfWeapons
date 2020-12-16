@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="Image/Plugin Icon - 1.png">
+    <link rel="icon" type="image/png" href="/Image/Plugin Icon - 1.png">
     <title>Оружие времен и народов.</title>
-    <link rel="stylesheet" type="text/css" href="UpdateData/updateDataStyle.css">
+    <link rel="stylesheet" type="text/css" href="/UpdateData/updateDataStyle.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <meta charset="utf-8"/>
 </head>
 <body>
         <nav class="top-menu">
                 <ul class="menu-main">
-                  <li><a href="index.html">Оружие народов и времен</a></li>
-                  <li><a href="Table/Era/tableEra.html">Список эпох</a></li>
-                  <li><a href="Table/Category/tableCategory.html">Список категорий</a></li>
+                  <li><a href="/index.html">Оружие народов и времен</a></li>
+                  <li><a href="/Table/Era/tableEra.html">Список эпох</a></li>
+                  <li><a href="/Table/Category/tableCategory.html">Список категорий</a></li>
                 </ul>
         </nav>
-            <form class= "search" action="" method="get">
+            <form class="search" id="search">
                 <input name="s" placeholder="Искать..." type="search">
                 <button type="submit">Поиск</button>
             </form>
             <h1 align="center">Редактировать</h1>
 
-        <nav>
-                <img align="left" class="left-pic" src="https://shetininaliza.github.io/DirectoryOfWeapons/Image/vulj.jpg">
-            <nav  align="center" class="Block">
-                <b><p class="Title">Название</p><b>
-                    <input value="Вульж"></input>
-            </nav>
-            <nav  align="center" class="Block">
-                <b><p class="Title">Страна:</p></b>
-                    <input value="Европа"></input>
-            </nav>
-        </nav>
-        <nav  align="center" class="BlockDis">
-            <b><p class="Title">Описание:</p></b>
-            <textarea>
-                Вульж— длиннодревковое оружие, появившееся в Европе в XIV веке. Конструктивно является промежуточным звеном в эволюции от топора к алебарде. 
+            <form id="edit">
+                <input type="hidden" name="real_name" value="Вульж"></input>
+              <nav>
+                      <img align="left" class="left-pic" src="/Image/vulj.jpg">
+                  <nav  align="center" class="Block">
+                      <b><p class="Title">Название</p><b>
+                          <input name="name" value="Вульж"></input>
+                  </nav>
+                  <nav  align="center" class="Block">
+                      <b><p class="Title">Страна:</p></b>
+                          <input name="country" value="Европа"></input>
+                  </nav>
+              </nav>
+              <nav  align="center" class="BlockDis">
+                  <b><p class="Title">Описание:</p></b>
+                  <textarea name="desc">Вульж— длиннодревковое оружие, появившееся в Европе в XIV веке. Конструктивно является промежуточным звеном в эволюции от топора к алебарде. 
                     
                     Характерными конструктивными особенностями вульжа является:
                     -Крепление клинка к древку осуществляется через проушины обухов, как у топоров;
@@ -43,9 +46,10 @@
                     Основное отличие вульжа от глефы заключается в том, что последняя крепится к древку посредством втулки. Вульж конструктивно очень близок к бердышу,
                     но для бердыша всегда характерна выраженная выпуклость лезвия со свободным местом между древком и клинком, что позволяет удобно перехватывать 
                     бердыш для ближнего боя, оставляя кисть руки защищённой. Длина клинка вульжа в среднем от 50 до 80 сантиметров, древко от полутора метров и более. 
-                    Общая длина вульжа составляет примерно 1,8 — 2,3 метра.
-            </textarea>
-            </nav>
-         <button class="Save" type="submit">Сохранить</button>
+                    Общая длина вульжа составляет примерно 1,8 — 2,3 метра.</textarea>
+                  </nav>
+               <button class="Save" type="submit">Сохранить</button>
+               </form>
+               <script type="text/javascript" src="/site.js"></script>
 </body>
 </html>

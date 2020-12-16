@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="https://shetininaliza.github.io/DirectoryOfWeapons/Image/Plugin Icon - 1.png">
+    <link rel="icon" type="image/png" href="/Image/Plugin Icon - 1.png">
     <title>Оружие времен и народов.</title>
-    <link rel="stylesheet" type="text/css" href="https://shetininaliza.github.io/DirectoryOfWeapons/UpdateData/updateDataStyle.css">
+    <link rel="stylesheet" type="text/css" href="/UpdateData/updateDataStyle.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <meta charset="utf-8"/>
 </head>
 <body>
         <nav class="top-menu">
                 <ul class="menu-main">
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/index.html">Оружие народов и времен</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Era/tableEra.html">Список эпох</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Category/tableCategory.html">Список категорий</a></li>
+                  <li><a href="/index.html">Оружие народов и времен</a></li>
+                  <li><a href="/Table/Era/tableEra.html">Список эпох</a></li>
+                  <li><a href="/Table/Category/tableCategory.html">Список категорий</a></li>
                 </ul>
         </nav>
-        <form class= "search" action="" method="get">
+        <form class="search" id="search">
             <input name="s" placeholder="Искать..." type="search">
             <button type="submit">Поиск</button>
         </form>
         <h1 align="center">Редактировать</h1>
 
-        <nav>
-                <img align="left" class="left-pic" src="https://shetininaliza.github.io/DirectoryOfWeapons/Image/AK.png">
-            <nav  align="center" class="Block">
-                <b><p class="Title">Название</p><b>
-                    <input size="avto" value="Автомат Калашникова"></input>
-            </nav>
-            <nav  align="center" class="Block">
-                <b><p class="Title">Страна:</p></b>
-                    <input value="Россия и страны СНГ, Афганистан, Бангладеш, Китай(Тип 56), Куба, Куния, Лаос, Мадагаскар, Мали, Вьетнам, Йемен и другие"></input>
-            </nav>
-        </nav>
-        <nav  align="center" class="BlockDis">
-            <b><p class="Title">Описание:</p></b>
-            <textarea>Автомат Калашникова и его модификации являются самым распространенным стрелковым оружием по всему миру. Был принят на вооружение в СССР в 
+        <form id="edit">
+            <input type="hidden" name="real_name" value="Автомат Калашникова"></input>
+          <nav>
+                  <img align="left" class="left-pic" src="/Image/AK.png">
+              <nav  align="center" class="Block">
+                  <b><p class="Title">Название</p><b>
+                      <input name="name" value="Автомат Калашникова"></input>
+              </nav>
+              <nav  align="center" class="Block">
+                  <b><p class="Title">Страна:</p></b>
+                      <input name="country" value="Россия и страны СНГ, Афганистан, Бангладеш, Китай(Тип 56), Куба, Куния, Лаос, Мадагаскар, Мали, Вьетнам, Йемен и другие"></input>
+              </nav>
+          </nav>
+          <nav  align="center" class="BlockDis">
+              <b><p class="Title">Описание:</p></b>
+              <textarea name="desc">Автомат Калашникова и его модификации являются самым распространенным стрелковым оружием по всему миру. Был принят на вооружение в СССР в 
                 1949 году. Был сконструирован в 1947 году М. Т. Калашниковым.
                 Варианты: АК-47,АКС,АКМ,АКМС,АК-74,АКС-74,АК-74М,АКС-74У,AK-103,AK-105,AK-107,АК-12,АК-15.
                 Только за 60 лет было выпущено более 70 миллионов автоматов Калашникова различных модификаций. Они состоят на вооружении 50 иностранных армий.
@@ -44,10 +48,11 @@
                 неподвижным, а в движение приходят: пуля — с одной стороны, оружие в целом — с другой. Так как масса оружия в целом и пули различается во 
                 много раз, пуля движется при этом гораздо быстрее, перемещаясь в направлении дульного среза ствола и благодаря наличию в его канале нарезов 
                 приобретая правое вращательное движение для стабилизации в полёте. Движение же оружия воспринимается стрелком как его отдача (одна из её 
-                составляющих). 
-                </textarea>
-            </nav>
-         <button class="Save" type="submit">Сохранить</button>
+                составляющих). </textarea>
+              </nav>
+           <button class="Save" type="submit">Сохранить</button>
+           </form>
+           <script type="text/javascript" src="/site.js"></script>
 </body>
 </html>
             

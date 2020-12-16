@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="https://shetininaliza.github.io/DirectoryOfWeapons/Image/Plugin Icon - 1.png">
+    <link rel="icon" type="image/png" href="/Image/Plugin Icon - 1.png">
     <title>Оружие времен и народов.</title>
-    <link rel="stylesheet" type="text/css" href="https://shetininaliza.github.io/DirectoryOfWeapons/UpdateData/updateDataStyle.css">
+    <link rel="stylesheet" type="text/css" href="/UpdateData/updateDataStyle.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <meta charset="utf-8"/>
 </head>
 <body>
         <nav class="top-menu">
                 <ul class="menu-main">
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/index.html">Оружие народов и времен</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Era/tableEra.html">Список эпох</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Category/tableCategory.html">Список категорий</a></li>
+                  <li><a href="/index.html">Оружие народов и времен</a></li>
+                  <li><a href="/Table/Era/tableEra.html">Список эпох</a></li>
+                  <li><a href="/Table/Category/tableCategory.html">Список категорий</a></li>
                 </ul>
         </nav>
-            <form class= "search" action="" method="get">
+            <form class="search" id="search">
                 <input name="s" placeholder="Искать..." type="search">
                 <button type="submit">Поиск</button>
             </form>
             <h1 align="center">Редактировать</h1>
 
-        <nav>
-                <img align="left" class="left-pic" src="https://shetininaliza.github.io/DirectoryOfWeapons/Image/pishal.jpg">
-            <nav  align="center" class="Block">
-                <b><p class="Title">Название</p><b>
-                    <input value="Пищаль"></input>
-            </nav>
-            <nav  align="center" class="Block">
-                <b><p class="Title">Страна:</p></b>
-                    <input value="Русь"></input>
-            </nav>
-        </nav>
-        <nav  align="center" class="BlockDis">
-            <b><p class="Title">Описание:</p></b>
-            <textarea>Пищаль -средне- и длинноствольного огнестрельного оружия на Руси.
-                Пищали, появившиеся в последней четверти XIV века, использовались для прицельной стрельбы по живой силе и укреплениям. Слово «пищаль» 
-                известно в славянских источниках с XI века и связано с глаголом «пищать». От родственного чешского слова «píšťala» произошло слово пистолет. 
-                Применительно к огнестрельному оружию слово пищаль впервые упоминается около 1399 года.
-                Существовали как ручные пищали (известные также под названиями ручница, самопал), так и крепостные, затинные, предназначенные для стрельбы со 
-                стен укрепления или станка (треноги или лафета). Словом пищаль также нередко именовали пушки. 
-                
-                Различали разнообразные виды пищалей-орудий:
-                -по тактическому назначению: крепостные, осадные, стенобитные, полковые, полевые;
-                -по конструкционному материалу: железные, стальные, медные, бронзовые, чугунные.
-
-                В качестве снарядов использовались, преимущественно, железные или чугунные ядра (для ручных пищалей — пули).
-
-                Первоначально конструкция разных пищалей была очень схожей. Конструктивные различия появились в конце XV века с изобретением фитильных замков. 
-                В XVI веке появились ручные кремнёвые пищали, которые состояли на вооружении до XVIII века. Фактически, это уже была русская реализация мушкета. 
-                Такие пищали вышли из употребления при реформе армии, проводившейся Петром I.
-
-                На Руси с 1408 года пищали упоминаются в качестве осадной артиллерии, с 1450 — средства для обороны городов, а с 1480 пищалями называется 
-                не только артиллерия, но и стрелковое оружие. 
-                </textarea>
-            </nav>
-         <button class="Save" type="submit">Сохранить</button>
+            <form id="edit">
+                <input type="hidden" name="real_name" value="Пищаль"></input>
+              <nav>
+                      <img align="left" class="left-pic" src="/Image/pishal.jpg">
+                  <nav  align="center" class="Block">
+                      <b><p class="Title">Название</p><b>
+                          <input name="name" value="Пищаль"></input>
+                  </nav>
+                  <nav  align="center" class="Block">
+                      <b><p class="Title">Страна:</p></b>
+                          <input name="country" value="Русь"></input>
+                  </nav>
+              </nav>
+              <nav  align="center" class="BlockDis">
+                  <b><p class="Title">Описание:</p></b>
+                  <textarea name="desc">Пищаль -средне- и длинноствольного огнестрельного оружия на Руси.
+                    Пищали, появившиеся в последней четверти XIV века, использовались для прицельной стрельбы по живой силе и укреплениям. Слово «пищаль» 
+                    известно в славянских источниках с XI века и связано с глаголом «пищать». От родственного чешского слова «píšťala» произошло слово пистолет. 
+                    Применительно к огнестрельному оружию слово пищаль впервые упоминается около 1399 года.
+                    Существовали как ручные пищали (известные также под названиями ручница, самопал), так и крепостные, затинные, предназначенные для стрельбы со 
+                    стен укрепления или станка (треноги или лафета). Словом пищаль также нередко именовали пушки. 
+                    
+                    Различали разнообразные виды пищалей-орудий:
+                    -по тактическому назначению: крепостные, осадные, стенобитные, полковые, полевые;
+                    -по конструкционному материалу: железные, стальные, медные, бронзовые, чугунные.
+    
+                    В качестве снарядов использовались, преимущественно, железные или чугунные ядра (для ручных пищалей — пули).
+    
+                    Первоначально конструкция разных пищалей была очень схожей. Конструктивные различия появились в конце XV века с изобретением фитильных замков. 
+                    В XVI веке появились ручные кремнёвые пищали, которые состояли на вооружении до XVIII века. Фактически, это уже была русская реализация мушкета. 
+                    Такие пищали вышли из употребления при реформе армии, проводившейся Петром I.
+    
+                    На Руси с 1408 года пищали упоминаются в качестве осадной артиллерии, с 1450 — средства для обороны городов, а с 1480 пищалями называется 
+                    не только артиллерия, но и стрелковое оружие. 
+                    </textarea>
+                  </nav>
+               <button class="Save" type="submit">Сохранить</button>
+               </form>
+               <script type="text/javascript" src="/site.js"></script>
 </body>
 </html>

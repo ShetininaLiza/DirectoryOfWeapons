@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="https://shetininaliza.github.io/DirectoryOfWeapons/Image/Plugin Icon - 1.png">
+    <link rel="icon" type="image/png" href="/Image/Plugin Icon - 1.png">
     <title>Оружие времен и народов.</title>
-    <link rel="stylesheet" type="text/css" href="https://shetininaliza.github.io/DirectoryOfWeapons/UpdateData/updateDataStyle.css">
+    <link rel="stylesheet" type="text/css" href="/UpdateData/updateDataStyle.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <meta charset="utf-8"/>
 </head>
 <body>
         <nav class="top-menu">
                 <ul class="menu-main">
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/index.html">Оружие народов и времен</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Era/tableEra.html">Список эпох</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Category/tableCategory.html">Список категорий</a></li>
+                  <li><a href="/index.html">Оружие народов и времен</a></li>
+                  <li><a href="/Table/Era/tableEra.html">Список эпох</a></li>
+                  <li><a href="/Table/Category/tableCategory.html">Список категорий</a></li>
                 </ul>
         </nav>
-            <form class= "search" action="" method="get">
+            <form class="search" id="search">
                 <input name="s" placeholder="Искать..." type="search">
                 <button type="submit">Поиск</button>
             </form>
             <h1 align="center">Редактировать</h1>
 
-        <nav>
-                <img align="left" class="left-pic" src="https://shetininaliza.github.io/DirectoryOfWeapons/Image/mechRomans.jpg">
-            <nav  align="center" class="Block">
-                <b><p class="Title">Название</p><b>
-                    <input value="Меч (романский)"></input>
-            </nav>
-            <nav  align="center" class="Block">
-                <b><p class="Title">Страна:</p></b>
-                    <input value="Европа, Русь"></input>
-            </nav>
-        </nav>
-        <nav  align="center" class="BlockDis">
-            <b><p class="Title">Описание:</p></b>
-            <textarea>
-                Романский меч— тип европейского меча периода Высокого и, частично, позднего Средневековья (примерно с 1000 по 1350 год), использовавшийся в 
+            <form id="edit">
+                <input type="hidden" name="real_name" value="Меч (романский)"></input>
+              <nav>
+                      <img align="left" class="left-pic" src="/Image/mechRomans.jpg">
+                  <nav  align="center" class="Block">
+                      <b><p class="Title">Название</p><b>
+                          <input name="name" value="Меч (романский)"></input>
+                  </nav>
+                  <nav  align="center" class="Block">
+                      <b><p class="Title">Страна:</p></b>
+                          <input name="country" value="Европа, Русь"></input>
+                  </nav>
+              </nav>
+              <nav  align="center" class="BlockDis">
+                  <b><p class="Title">Описание:</p></b>
+                  <textarea name="desc">Романский меч— тип европейского меча периода Высокого и, частично, позднего Средневековья (примерно с 1000 по 1350 год), использовавшийся в 
                     Западной Европе практически исключительно сословием рыцарей, а на Руси — в княжеском войске. Другое их название — капетингские, вероятно, по 
                     аналогии с каролингскими. Вместе с мечами XIV—XV веков в наше время иногда объединяются термином «рыцарский меч».В качестве оружия романские 
                     мечи играли во многом вспомогательную роль, но были важным отличительным признаком статуса — только дворянин имел право носить меч на поясе, 
@@ -41,9 +44,10 @@
                     запрещалось. Для романских мечей характерен сдержанный внешний вид, чаще всего лишённый украшений. Их широкие клинки, иногда нёсшие на себе 
                     загадочные аббревиатуры. В основном предназначались для рубящих ударов, что было вполне достаточно в эпоху, когда защитой главным образом 
                     служил кольчужный доспех. Значительное количество образцов дошло до нашего времени, также они нередко изображались на миниатюрах, были 
-                    представлены в круглой скульптуре и на барельефах, описывались в письменных источниках.
-            </textarea>
-            </nav>
-         <button class="Save" type="submit">Сохранить</button>
+                    представлены в круглой скульптуре и на барельефах, описывались в письменных источниках.</textarea>
+                  </nav>
+               <button class="Save" type="submit">Сохранить</button>
+               </form>
+               <script type="text/javascript" src="/site.js"></script>
 </body>
 </html>

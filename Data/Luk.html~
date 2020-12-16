@@ -3,8 +3,7 @@
 <head>
     <link rel="icon" type="image/png" href="/Image/Plugin Icon - 1.png">
     <title>Оружие времен и народов.</title>
-    <link rel="stylesheet" type="text/css" href="/UpdateData/updateDataStyle.css">
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" type="text/css" href="/Data/dataStyle.css">
     <meta charset="utf-8"/>
 </head>
 <body>
@@ -13,31 +12,24 @@
                   <li><a href="/index.html">Оружие народов и времен</a></li>
                   <li><a href="/Table/Era/tableEra.html">Список эпох</a></li>
                   <li><a href="/Table/Category/tableCategory.html">Список категорий</a></li>
+                  <li><a href="/UpdateData/UpdateLuk.html">Редактировать</a></li>
                 </ul>
         </nav>
-            <form class="search" id="search">
+            <form class= "search" action="" method="get">
                 <input name="s" placeholder="Искать..." type="search">
                 <button type="submit">Поиск</button>
             </form>
-            <h1 align="center">Редактировать</h1>
-            
-
-            <form id="edit">
-                <input type="hidden" name="real_name" value="Лук"></input>
-              <nav>
-                      <img align="left" class="left-pic" src="/Image/luk.jpg">
-                  <nav  align="center" class="Block">
-                      <b><p class="Title">Название</p><b>
-                          <input name="name" value="Лук"></input>
-                  </nav>
-                  <nav  align="center" class="Block">
-                      <b><p class="Title">Страна:</p></b>
-                          <input name="country" value="Англия (сложный), Монголия(сложные), Китай(сложные), Русь(сложные)"></input>
-                  </nav>
-              </nav>
-              <nav  align="center" class="BlockDis">
-                  <b><p class="Title">Описание:</p></b>
-                  <textarea name="desc">Лук — метательное оружие, предназначенное для стрельбы стрелами. Для выстрела стрелок натягивает тетиву, запасая тем самым энергию в согнутой 
+            <h1 align="center">Лук.</h1>
+            <nav>
+                    <img align="left" class="left-pic" src="/Image/luk.jpg">
+                <nav  align="center" class="Block">
+                <b><p class="Title">Страна:</p></b>
+                <p>Англия (сложный), Монголия(сложные), Китай(сложные), Русь(сложные)</p>
+            </nav>
+            </nav>
+            <nav  align="center" class="BlockDis">
+                <b><p class="Title">Описание:</p></b>
+                 <p>Лук — метательное оружие, предназначенное для стрельбы стрелами. Для выстрела стрелок натягивает тетиву, запасая тем самым энергию в согнутой 
                     дуге лука, после чего отпускает тетиву, и дуга, быстро разгибаясь, преобразует запасённую потенциальную энергию в кинетическую энергию быстро 
                     летящей стрелы.
                     Дальность полёта стрелы зависит от конструкции лука, силы натяжения тетивы и погоды.
@@ -58,11 +50,9 @@
                     введения металлических утяжелителей дуг.Составной лук переводил энергию натяжения в кинетическую энергию стрелы с наибольшей эффективностью, 
                     даже без утяжелителей сообщая снаряду, при равном с деревянным луком натяжении, на 30 % большую энергию. Имея значительно бо́льшую прочность 
                     при равной длине с тисовым, составной лук, кроме того, был очень живуч. Срок его службы исчислялся десятилетиями, а перевозиться он мог в 
-                    боеготовном состоянии, что представлялось воинам в высшей степени ценным качеством. Хотя, конечно, при длительном хранении тетива снималась. 
-                    </textarea>
-                  </nav>
-               <button class="Save" type="submit">Сохранить</button>
-               </form>
-               <script type="text/javascript" src="/site.js"></script>
-</body>
+                    боеготовном состоянии, что представлялось воинам в высшей степени ценным качеством. Хотя, конечно, при длительном хранении тетива снималась.   
+                </p>
+             </nav>
+             
+    </body>
 </html>

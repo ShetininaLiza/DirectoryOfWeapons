@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="https://shetininaliza.github.io/DirectoryOfWeapons/Image/Plugin Icon - 1.png">
+    <link rel="icon" type="image/png" href="/Image/Plugin Icon - 1.png">
     <title>Оружие времен и народов.</title>
-    <link rel="stylesheet" type="text/css" href="https://shetininaliza.github.io/DirectoryOfWeapons/UpdateData/updateDataStyle.css">
+    <link rel="stylesheet" type="text/css" href="/UpdateData/updateDataStyle.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <meta charset="utf-8"/>
 </head>
 <body>
         <nav class="top-menu">
                 <ul class="menu-main">
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/index.html">Оружие народов и времен</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Era/tableEra.html">Список эпох</a></li>
-                  <li><a href="https://shetininaliza.github.io/DirectoryOfWeapons/Table/Category/tableCategory.html">Список категорий</a></li>
+                  <li><a href="/index.html">Оружие народов и времен</a></li>
+                  <li><a href="/Table/Era/tableEra.html">Список эпох</a></li>
+                  <li><a href="/Table/Category/tableCategory.html">Список категорий</a></li>
                 </ul>
         </nav>
-            <form class= "search" action="" method="get">
+            <form class="search" id="search">
                 <input name="s" placeholder="Искать..." type="search">
                 <button type="submit">Поиск</button>
             </form>
             <h1 align="center">Редактировать</h1>
 
-        <nav>
-                <img align="left" class="left-pic" src="https://shetininaliza.github.io/DirectoryOfWeapons/Image/jspadron.jpg">
-            <nav  align="center" class="Block">
-                <b><p class="Title">Название</p><b>
-                    <input value="Эспадрон"></input>
-            </nav>
-            <nav  align="center" class="Block">
-                <b><p class="Title">Страна:</p></b>
-                    <input value="Англий, Франция, Италия"></input>
-            </nav>
-        </nav>
-        <nav  align="center" class="BlockDis">
-            <b><p class="Title">Описание:</p></b>
-            <textarea>Эспадрон- это колющее и рубящее клинковое холодное оружие, разновидность шпаги. Нечто средне между шпагой и палашом. 
-                В XVIII веке в странах Западной Европы в качестве офицерского оружия использовались преимущественно шпаги и колишемарды. 
-                В период якобитских восстаний английские войска столкнулись с широким использованием шотландских палашей, обладавших хорошими 
-                рубящими качествами, однако, при высоком весе. В противовес им на основе шпаг возник эспадрон (англ. spadroon), сочетавший малый 
-                вес и небольшую длину шпаг с возможностью нанесения рубящего удара по типу палаша, а позже — и сабли. Изначально являлось английским
-                оружием, но к 1790-м годам оно распространилось во Францию, а позже и в другие страны. Так, в Италии существовали саблевидные дуэльные 
-                эспадроны.В русском языке с конца XVIII века данное понятие закрепилось за тупыми саблями и палашами, применяемыми при обучении фехтованию. 
-                </textarea>
-            </nav>
-         <button class="Save" type="submit">Сохранить</button>
+            <form id="edit">
+                <input type="hidden" name="real_name" value="Эспадрон"></input>
+              <nav>
+                      <img align="left" class="left-pic" src="/Image/jspadron.jpg">
+                  <nav  align="center" class="Block">
+                      <b><p class="Title">Название</p><b>
+                          <input name="name" value="Эспадрон"></input>
+                  </nav>
+                  <nav  align="center" class="Block">
+                      <b><p class="Title">Страна:</p></b>
+                          <input name="country" value="Англий, Франция, Италия"></input>
+                  </nav>
+              </nav>
+              <nav  align="center" class="BlockDis">
+                  <b><p class="Title">Описание:</p></b>
+                  <textarea name="desc">Эспадрон- это колющее и рубящее клинковое холодное оружие, разновидность шпаги. Нечто средне между шпагой и палашом. 
+                    В XVIII веке в странах Западной Европы в качестве офицерского оружия использовались преимущественно шпаги и колишемарды. 
+                    В период якобитских восстаний английские войска столкнулись с широким использованием шотландских палашей, обладавших хорошими 
+                    рубящими качествами, однако, при высоком весе. В противовес им на основе шпаг возник эспадрон (англ. spadroon), сочетавший малый 
+                    вес и небольшую длину шпаг с возможностью нанесения рубящего удара по типу палаша, а позже — и сабли. Изначально являлось английским
+                    оружием, но к 1790-м годам оно распространилось во Францию, а позже и в другие страны. Так, в Италии существовали саблевидные дуэльные 
+                    эспадроны.В русском языке с конца XVIII века данное понятие закрепилось за тупыми саблями и палашами, применяемыми при обучении фехтованию. 
+                    </textarea>
+                  </nav>
+               <button class="Save" type="submit">Сохранить</button>
+               </form>
+               <script type="text/javascript" src="/site.js"></script>
 </body>
 </html>
